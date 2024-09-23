@@ -270,7 +270,55 @@
                                 "elementId": "overdue_needit_tasks",
                                 "elementLabel": "Overdue Needit tasks",
                                 "eventMappings": [
-                                    
+                                    {
+                                        "eventMappingId": "cmbbchhzcxpaajjccddbhhtbbffyvpbf",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_58872_needit.NAV_ITEM_SELECTED_RELAY_c7271b30c3341a10fbf6b8e1b4013126",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "external": null,
+                                                            "fields": {
+                                                                "table": "x_58872_needit_needit"
+                                                            },
+                                                            "multiInstField": null,
+                                                            "navigationOptions": null,
+                                                            "params": {
+                                                                "listTitle": "Overdue NeedIts",
+                                                                "listView": "Experience_list",
+                                                                "query": "active=true^u_when_needed&lt;javascript:gs.beginningOfToday()"
+                                                            },
+                                                            "passiveNavigation": null,
+                                                            "redirect": null,
+                                                            "route": "simple-list",
+                                                            "targetRoute": null,
+                                                            "title": null
+                                                        }
+                                                    },
+                                                    "sysId": "9c008e5dc3301210fbf6b8e1b40131a2"
+                                                },
+                                                "operation": null,
+                                                "targetId": "cmbbchhzcxpaajjcdddbhhtjjtgcadvhh",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
                                 ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
@@ -942,15 +990,7 @@
                                     }
                                 },
                                 "slot": null,
-                                "styles": {
-                                    "background": "rgb(var(--now-color--neutral-0))",
-                                    "border-color": "RGB(var(--now-color--neutral-5))",
-                                    "border-style": "solid",
-                                    "border-width": "var(--now-static-space--xxs)",
-                                    "box-shadow": "var(--now-static-drop-shadow--md)",
-                                    "height": null,
-                                    "width": "30%"
-                                }
+                                "styles": null
                             },
                             {
                                 "definition": {
@@ -960,7 +1000,111 @@
                                 "elementId": "single_score_1",
                                 "elementLabel": "Pie 1",
                                 "eventMappings": [
-                                    
+                                    {
+                                        "eventMappingId": "cmbbciinkhoaabbxnddbhhtwesfbbfjaa",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_58872_needit.NAV_ITEM_SELECTED_RELAY_c7271b30c3341a10fbf6b8e1b4013126",
+                                                    "payload": {
+                                                        "container": {
+                                                            "external": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "fields": {
+                                                                "container": {
+                                                                    "table": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "params",
+                                                                                "table"
+                                                                            ]
+                                                                        },
+                                                                        "type": "EVENT_PAYLOAD_BINDING"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "multiInstField": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "navigationOptions": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "params": {
+                                                                "container": {
+                                                                    "listTitle": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "title"
+                                                                            ]
+                                                                        },
+                                                                        "type": "EVENT_PAYLOAD_BINDING"
+                                                                    },
+                                                                    "listView": {
+                                                                        "type": "JSON_LITERAL",
+                                                                        "value": "Experience_list"
+                                                                    },
+                                                                    "query": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "params",
+                                                                                "query"
+                                                                            ]
+                                                                        },
+                                                                        "type": "EVENT_PAYLOAD_BINDING"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "passiveNavigation": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "redirect": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "route": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "simple-list"
+                                                            },
+                                                            "targetRoute": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "9c008e5dc3301210fbf6b8e1b40131a2"
+                                                },
+                                                "operation": null,
+                                                "targetId": "cmbbciinkhpaabbxoddbhhthhkvggaaafft",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
                                 ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
@@ -1493,11 +1637,7 @@
                                     }
                                 },
                                 "slot": null,
-                                "styles": {
-                                    "background": "rgb(var(--now-color--neutral-0))",
-                                    "height": "250px",
-                                    "width": "33%"
-                                }
+                                "styles": null
                             }
                         ],
                         "layout": {
@@ -1520,6 +1660,7 @@
                                         "element_id": "single_score_1",
                                         "styles": {
                                             "background": "rgb(var(--now-color--neutral-0))",
+                                            "height": "250px",
                                             "width": "33%"
                                         }
                                     }
@@ -1638,7 +1779,47 @@
                                 "elementId": "list_table",
                                 "elementLabel": "List",
                                 "eventMappings": [
-                                    
+                                    {
+                                        "eventMappingId": "cmbbdmiyffbaabbxhhddbhhujebdassdd",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#DATA_FETCH_SUCCEEDED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#DATA_FETCH_SUCCEEDED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf_page.NOW_UXF_PAGE#ADD_NOTIFICATIONS",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "items": [
+                                                                {
+                                                                    "action": {
+                                                                        "type": "dismiss"
+                                                                    },
+                                                                    "content": "NeedIt records were fetched successfully"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    "sysId": "49fe7d575f983bb3f8eea3fa8d40694c"
+                                                },
+                                                "operation": null,
+                                                "targetId": "cmbbdmiyffcaabbxiiddbhhuaauddiunvs",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
                                 ],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
@@ -1908,7 +2089,7 @@
     }
 ]</data>
         <description/>
-        <dispatched_events/>
+        <dispatched_events>9c008e5dc3301210fbf6b8e1b40131a2</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -1989,14 +2170,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-09-20 07:01:28</sys_created_on>
         <sys_id>c7271b30c3341a10fbf6b8e1b4013126</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>70</sys_mod_count>
         <sys_name>NeedIt Admin home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_ux_macroponent_c7271b30c3341a10fbf6b8e1b4013126</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-09-21 13:35:35</sys_updated_on>
+        <sys_updated_by>fred.luddy</sys_updated_by>
+        <sys_updated_on>2024-09-23 03:39:27</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=c7271b30c3341a10fbf6b8e1b4013126"/>
 </record_update>
